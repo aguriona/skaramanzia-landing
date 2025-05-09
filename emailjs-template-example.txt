@@ -1,0 +1,8 @@
+Asunto: Nuevo contacto desde la web - {{subject}}
+
+Nombre: {{name}}
+Email: {{email}}
+Asunto: {{subject}}
+Mensaje: {{message}}
+
+El remitente ha aceptado el acuerdo de confidencialidad.
