@@ -8,8 +8,7 @@ interface LogoProps {
 
 export const Logo: React.FC<LogoProps> = ({ className = '', showText = true }) => {
   return (
-    <motion.a 
-      href="#"
+    <motion.div 
       className={`flex items-center gap-2 ${className}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -23,6 +22,6 @@ export const Logo: React.FC<LogoProps> = ({ className = '', showText = true }) =
       {showText && (
         <span className="text-white font-bold text-xl">Skaramanzia</span>
       )}
-    </motion.a>
+    </motion.div>
   );
 };

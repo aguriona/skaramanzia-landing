@@ -7,7 +7,7 @@ export const Footer = () => {
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/skaramanz.ia/' },
     { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61575761200618' },
-    { icon: Linkedin, href: 'https://linkedin.com/company/morpheus-ai' }
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/skaramanzia/' }
   ];
 
   const links = [

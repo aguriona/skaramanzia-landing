@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 type Message = {
-    sender: 'user' | 'bot';
+    sender: 'user' | 'bot' | 'typing';
     text: string;
 };
 
@@ -31,35 +31,53 @@ const Chatbot = () => {
 
     const sendMessage = async () => {
         if (input.trim()) {
+            const userMessage = input; // Store message before clearing input
+            
+            // Clear input immediately
+            setInput('');
+            
             setMessages((prevMessages) => [
                 ...prevMessages,
-                { sender: 'user', text: input },
+                { sender: 'user', text: userMessage },
+            ]);
+
+            // Mostrar indicador de escritura
+            setMessages((prevMessages) => [
+                ...prevMessages,
+                { sender: 'typing', text: '' },
             ]);
 
             try {
                 const response = await fetch(
-                    'https://monkeylord.up.railway.app/webhook/97e06ab4-de40-4416-805f-ddcbb45ff4b1/chat',
+                    'https://monkeylord.up.railway.app/webhook/678f1f57-e7a4-4eef-9dd4-13757e951425/chat',
                     {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
                             sessionId,
                             action: 'sendMessage',
-                            chatInput: input,
+                            chatInput: userMessage,
                         }),
                     }
                 );
 
                 const data = await response.json();
 
-                setMessages((prevMessages) => [
-                    ...prevMessages,
-                    { sender: 'bot', text: data.output || 'No hay respuesta' },
-                ]);
+                // Quitar el indicador de escritura y agregar la respuesta del bot
+                setMessages((prevMessages) => 
+                    prevMessages
+                        .filter(msg => msg.sender !== 'typing') // Eliminar el indicador de escritura
+                        .concat({ sender: 'bot', text: data.output || 'No hay respuesta' })
+                );
             } catch (error) {
                 console.error('Error enviando el mensaje:', error);
+                // En caso de error, también quitar el indicador de escritura
+                setMessages((prevMessages) => 
+                    prevMessages
+                        .filter(msg => msg.sender !== 'typing')
+                        .concat({ sender: 'bot', text: 'Lo siento, ocurrió un error al procesar tu mensaje.' })
+                );
             }
-            setInput('');
         }
     };
 
@@ -79,15 +97,26 @@ const Chatbot = () => {
                     <div className="chatbot-header">🤖 Eva Bot</div>
                     <div className="chatbot-messages">
                         {messages.map((msg, index) => (
-                            <div
-                                key={index}
-                                className={`message ${msg.sender}`}
-                            >
-                                <span>
-                                    {msg.sender === 'user' ? '👤' : '🤖'}{' '}
-                                    {msg.text}
-                                </span>
-                            </div>
+                            msg.sender === 'typing' ? (
+                                // Indicador de escritura animado
+                                <div key={index} className="message bot typing-indicator">
+                                    <span className="typing">
+                                        <span className="dot"></span>
+                                        <span className="dot"></span>
+                                        <span className="dot"></span>
+                                    </span>
+                                </div>
+                            ) : (
+                                <div
+                                    key={index}
+                                    className={`message ${msg.sender}`}
+                                >
+                                    <span>
+                                        {msg.sender === 'user' ? '👤' : '🤖'}{' '}
+                                        {msg.text}
+                                    </span>
+                                </div>
+                            )
                         ))}
                     </div>
                     <div className="chatbot-input">

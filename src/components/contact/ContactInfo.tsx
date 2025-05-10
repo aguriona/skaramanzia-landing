@@ -35,7 +35,7 @@ export const ContactInfo = () => {
       icon: Linkedin,
       title: 'LinkedIn',
       details: 'Skaramanzia',
-      link: 'https://linkedin.com/company/morpheus-ai'
+      link: 'https://www.linkedin.com/in/skaramanzia/'
     }
   ];
 
