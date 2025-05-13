@@ -42,22 +42,6 @@ export const Hero = () => {
                 combinando la eficiencia de la IA con estrategias de marketing 
                 digital para impulsar un crecimiento real y medible.
               </motion.p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  className="group px-8 py-4 bg-[#00f2ff] rounded-lg text-black font-semibold flex items-center justify-center gap-2 hover:bg-[#00f2ff]/90 transition-colors shadow-[0_0_20px_rgba(0,242,255,0.3)]"
-                >
-                  Comienza Ahora
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg text-white font-semibold hover:bg-white/10 transition-colors"
-                >
-                  Conoce Más
-                </motion.button>
-              </div>
             </div>
 
             <div className="lg:col-span-2">
