@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Componentes principales
@@ -15,7 +14,7 @@ import BlogPost from './pages/blog/BlogPost';
 function App() {
   return (
     <Router>
-      <div className="relative min-h-screen z-10">
+      <div className="relative min-h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />

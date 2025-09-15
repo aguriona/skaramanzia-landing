@@ -1,10 +1,10 @@
-# Morpheus - Soluciones Inteligentes para Negocios
+# Skaramanzia - Inteligencia Artificial para Inmobiliarias
 
-![Morpheus](https://via.placeholder.com/1200x630/0a0a0a/00f2ff?text=Morpheus)
+![Skaramanzia](https://via.placeholder.com/1200x630/0a0a0a/00f2ff?text=Skaramanzia)
 
 ## Descripción del Proyecto
 
-Morpheus es una innovadora empresa que ofrece soluciones tecnológicas avanzadas diseñadas para transformar y potenciar negocios en la era digital. Nuestra landing page presenta nuestros servicios principales y soluciones estratégicas con una interfaz moderna, interactiva y visualmente atractiva inspirada en el espacio.
+Skaramanzia es una plataforma innovadora especializada en soluciones de IA para el sector inmobiliario, diseñada para transformar la manera en que las inmobiliarias interactúan con sus clientes. Nuestra landing page presenta nuestros asistentes conversacionales IA, automatizaciones y servicios estratégicos con una interfaz moderna, interactiva y visualmente atractiva.
 
 ## Tecnologías Utilizadas
 
@@ -12,65 +12,84 @@ Morpheus es una innovadora empresa que ofrece soluciones tecnológicas avanzadas
 - **Estilos**: Tailwind CSS
 - **Animaciones**: Framer Motion, GSAP
 - **Despliegue**: Firebase Hosting
-- **Componentes**: Componentes personalizados con diseño modular
+- **Estado y Ruteo**: React Router v7
+- **Iconografía**: React Icons
+- **Componentes**: Arquitectura modular con componentes reutilizables
+- **Blog**: Sistema de blog con contenido generado desde TypeScript
 
-## Nuestros Servicios
+## Nuestras Soluciones
 
-### 1. Automatización Impulsada por IA
+### 1. Asistente Conversacional 100% IA
 
-Transformamos los procesos de negocio mediante soluciones de automatización inteligente:
+Transformamos la atención al cliente inmobiliario con nuestro asistente inteligente:
 
-- **Flujos de trabajo optimizados**: Automatizamos tareas repetitivas y procesos complejos para aumentar la eficiencia operativa.
-- **Chatbots y asistentes virtuales**: Implementamos soluciones conversacionales que mejoran la atención al cliente 24/7.
-- **Procesamiento inteligente de datos**: Extraemos información valiosa de grandes volúmenes de datos para facilitar la toma de decisiones.
-- **Integración de sistemas**: Conectamos aplicaciones existentes para crear flujos de información continuos.
+- **Chatbot IA y Chat de Voz**: Sin botones, entiende lenguaje natural, jergas y mensajes de voz con disponibilidad 24/7 en múltiples canales (WhatsApp, web, Facebook/Instagram).
+- **Personalización Total**: Se entrena con la "voz" y personalidad de cada inmobiliaria; adapta tonos, formularios de pregunta y respuestas frecuentes.
+- **Reservas y Citas Automáticas**: Cualifica al lead y agenda visitas directamente en el sistema, con confirmación y recordatorios automáticos.
 
-Nuestras soluciones de automatización están diseñadas para reducir costos operativos mientras incrementan la productividad y precisión de los procesos.
+### 2. Plantillas Organizativas
 
-### 2. Marketing Digital Estratégico
+Optimizamos la gestión interna de las inmobiliarias con herramientas potentes:
 
-Diseñamos estrategias de marketing digital efectivas y medibles:
+- **Cartera de Inmuebles**: Fichas detalladas de cada propiedad con estado (disponible, en negociación, alquilado/vendido), características y fotos.
+- **Pipeline de Ventas**: Seguimiento de leads (contactado, visita programada, oferta, cerrado) con alertas automáticas para leads inactivos.
+- **Calendario y Agenda**: Control centralizado de visitas, citas y reuniones, con cálculo de tiempos disponibles.
 
-- **SEO y SEM avanzado**: Mejoramos la visibilidad en buscadores con estrategias orgánicas y de pago.
-- **Campañas altamente segmentadas**: Diseñamos campañas publicitarias con segmentación precisa para maximizar el ROI.
-- **Email marketing personalizado**: Creamos secuencias automatizadas que nutren leads y aumentan conversiones.
-- **Análisis y optimización**: Implementamos sistemas de seguimiento para mejorar continuamente los resultados.
+### 3. Publicidad Digital Inteligente
 
-Nuestras estrategias de marketing convierten más visitantes en clientes mediante la combinación de creatividad y análisis de datos.
+Potenciamos la visibilidad y captación de leads de alta calidad:
 
-### 3. Consultoría y Desarrollo Tecnológico
+- **Google Ads**: Campañas de búsqueda y display segmentadas por intención para leads de alta calidad.
+- **Meta Ads**: Anuncios en Facebook/Instagram dirigidos a audiencias similares y remarketing a visitantes previos.
+- **Optimización Continua**: Ajustes automáticos de pujas, creatividades y audiencias basados en performance en tiempo real.
 
-Ofrecemos servicios completos de consultoría y desarrollo:
+### 4. Email Marketing & Nurturing
 
-- **Desarrollo de aplicaciones personalizadas**: Creamos soluciones a medida que se adaptan perfectamente a las necesidades de cada negocio.
-- **Asesoría estratégica**: Acompañamos a empresas en su transformación digital con una hoja de ruta clara.
-- **Implementación de IA en negocios**: Integramos tecnologías de inteligencia artificial adaptadas a objetivos comerciales.
-- **Formación y capacitación**: Preparamos equipos para aprovechar al máximo las nuevas tecnologías.
+Desarrollamos estrategias de comunicación automatizada pero personalizada:
 
-Nuestro enfoque de consultoría se basa en entender profundamente el negocio del cliente y ofrecer soluciones que generan valor real.
+- **Secuencias Automatizadas**: Series de correos tras el primer contacto, después de la visita y pre/cierre de contrato.
+- **Segmentación Dinámica**: Personalización de contenido según ubicación, presupuesto y etapa en el embudo de ventas.
+- **Plantillas Profesionales**: Diseño responsive y textos optimizados para mejorar tasas de apertura y clic.
 
-## Beneficios Clave
+## Estadísticas Destacadas
 
-- **Aumento de productividad**: Nuestras soluciones automatizan tareas repetitivas liberando tiempo para actividades estratégicas.
-- **Decisiones basadas en datos**: Proporcionamos insights accionables a partir del análisis de datos para tomar mejores decisiones.
-- **Optimización de recursos**: Reducimos costos operativos y maximizamos el rendimiento de las inversiones en tecnología y marketing.
-- **Escalabilidad**: Diseñamos soluciones que crecen con tu negocio y se adaptan a nuevos desafíos.
-- **Ventaja competitiva**: Implementamos tecnologías innovadoras que diferencian a nuestros clientes en sus mercados.
+- **90% de los prospectos** exigen respuesta instantánea, y sin ella, abandonan y buscan alternativas.
+- **25% de oportunidades** se pierden por tiempos de respuesta lentos.
+- **60% del tiempo** de los agentes inmobiliarios se dedica a responder preguntas repetitivas.
+- Con nuestros asistentes IA, las inmobiliarias pueden **aumentar hasta 5× sus leads cualificados**.
+- **90% de ahorro de tiempo** en gestión de mensajes y consultas básicas.
+- **Cero inversión inicial** con nuestro modelo de pago por éxito.
 
-## Acerca de Nosotros
+## Ventajas Competitivas
 
-En Morpheus combinamos experiencia técnica con visión estratégica. Nuestro equipo multidisciplinario está formado por expertos en desarrollo, marketing digital, inteligencia artificial y estrategia de negocios que trabajan juntos para ofrecer soluciones integrales y efectivas.
+- **Atención Hiperpersonalizada y Humana**: La IA responde con tono natural y empático, recibe audios y envía fotos, igual que un agente humano.
+- **Cero Inversión Inicial en IA**: Modelo "paga por éxito": configuras sin coste y solo abonas comisiones por reserva o leads cualificados.
+- **Simplificación Operativa**: Tu equipo se centra en actividades de alto valor (visitas presenciales, negociación).
+- **Incremento de Conversiones**: Duplicas reservas y contactos al ofrecer respuestas instantáneas y seguimiento proactivo.
+- **Escalabilidad Sin Costes Adicionales**: El sistema absorbe picos de demanda sin necesidad de contratar más personal.
+- **Control y Flexibilidad Total**: Activa o desactiva el asistente en distintas propiedades o canales según tu estrategia.
 
-Estamos comprometidos con la innovación constante y la excelencia en cada proyecto, buscando siempre superar las expectativas de nuestros clientes y contribuir a su crecimiento sostenible.
+## Estructura del Sitio
+
+Nuestra landing page está estructurada de la siguiente manera:
+
+- **Hero**: Presentación principal con llamada a la acción
+- **Soluciones**: Descripción de nuestros servicios principales
+- **Estadísticas**: Datos clave sobre el problema y nuestras soluciones
+- **Equipo**: Presentación de nuestros expertos
+- **Workflow**: Explicación de nuestro proceso de trabajo
+- **Testimonios**: Opiniones de clientes satisfechos
+- **Contacto**: Formulario y datos de contacto
+- **Blog**: Artículos informativos sobre IA y sector inmobiliario
 
 ## Contacto
 
-¿Listo para transformar tu negocio? Contáctanos hoy mismo para una consulta inicial sin compromiso.
+¿Listo para revolucionar tu inmobiliaria con IA? Contáctanos hoy mismo para una demostración sin compromiso.
 
-- **Email**: contacto@morpheus.com
-- **Teléfono**: +123 456 7890
-- **Oficina**: Av. Tecnológica 1234, Ciudad Innovación
+- **Email**: contacto@skaramanzia.com
+- **WhatsApp**: +34 600 000 000
+- **Web**: www.skaramanzia.com
 
 ---
 
-© 2025 Morpheus. Todos los derechos reservados.
+© 2025 Skaramanzia. Todos los derechos reservados.
